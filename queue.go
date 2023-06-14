@@ -8,14 +8,14 @@ type Queue struct {
 
 // Node is an instantiation that contains value and pointer to the previous and next node of the queue
 type Node struct {
-	Value    any
+	value    any
 	previous *Node
 	next     *Node
 }
 
 // PushFront adds a new element at the beginning of the queue.
 func (q *Queue) PushFront(value any) {
-	n := Node{Value: value, next: q.front}
+	n := Node{value: value, next: q.front}
 	if q.front != nil {
 		q.front.previous = &n
 		q.front = &n
@@ -43,12 +43,12 @@ func (q *Queue) PopFront() (value any) {
 		if q.front == nil {
 			value = nil
 		} else {
-			value = q.front.Value
+			value = q.front.value
 			q.front = nil
 			q.back = nil
 		}
 	} else {
-		value = q.front.Value
+		value = q.front.value
 		q.front = q.front.next
 		q.front.previous = nil
 	}
@@ -61,12 +61,12 @@ func (q *Queue) PopBack() (value any) {
 		if q.back == nil {
 			value = nil
 		} else {
-			value = q.back.Value
+			value = q.back.value
 			q.back = nil
 			q.front = nil
 		}
 	} else {
-		value = q.back.Value
+		value = q.back.value
 		q.back = q.back.previous
 		q.back.next = nil
 	}
@@ -76,7 +76,7 @@ func (q *Queue) PopBack() (value any) {
 // GetFront returns the value of front elements of the queue.
 func (q *Queue) GetFront() (value any) {
 	if q.front != nil {
-		value = q.front.Value
+		value = q.front.value
 	}
 
 	return
@@ -85,7 +85,7 @@ func (q *Queue) GetFront() (value any) {
 // GetBack returns the value of last elements of the queue
 func (q *Queue) GetBack() (value any) {
 	if q.back != nil {
-		value = q.back.Value
+		value = q.back.value
 	}
 
 	return
