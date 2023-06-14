@@ -12,7 +12,7 @@
 
 # queue 
 queue is a lightweight package for having queue and deque in Go.
-it performs better than the built-in "container/list" package for any operation.
+it performs better than the built-in [container/list](https://golang.org/pkg/container/list/) package for any operation.
 
 # Documentation
 
