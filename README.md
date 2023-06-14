@@ -11,8 +11,8 @@
 </p>
 
 # queue 
-queue is a lightweight package for having queue and deque in Go.
-it performs better than the built-in [container/list](https://golang.org/pkg/container/list/) package for any operation.
+queue is a lightweight package that provides queue and deque implementation with high performance in Go.
+it also performs better than the built-in [container/list](https://golang.org/pkg/container/list/) package for any operation.
 
 # Documentation
 
