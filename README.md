@@ -57,6 +57,68 @@ func main() {
 }
 
 ```
+## Usage
+
+#### type Queue
+```go
+type Queue struct {
+	front *Node
+	back  *Node
+}
+```
+Queue is an instantiation of the queue.
+
+#### func New
+```go
+func New() *Queue
+```
+New creates a new instance of a queue.
+
+#### func PushFront
+```go
+func (q *Queue) PushFront(value any)
+```
+PushFront adds a new element at the beginning of the queue.
+
+#### func PushBack
+```go
+func (q *Queue) PushBack(value any)
+```
+PushBack adds a new element at the end of the queue.
+
+#### func PopFront
+```go
+func (q *Queue) PopFront() (value any)
+```
+PopFront retrieves and removes the value of the first element in the queue.
+
+#### func PopBack
+```go
+func (q *Queue) PopBack() (value any)
+```
+PopBack retrieves and removes the value of the last element in the queue.
+
+#### func Front
+```go
+func (q *Queue) Front() (value any)
+```
+Front returns the value of front elements of the queue.
+
+#### func Back
+```go
+func (q *Queue) Back() (value any)
+```
+Back returns the value of last elements of the queue.
+
+## Benchmarks
+```
+$ cd benchmarks
+$ go test -bench .
+```
+<p align="center">
+<img src="./assets/photo/bar-graph.png" width=100%>
+</p>
+
 ## Contributing
 Pull requests are welcome. For changes, please open an issue first to discuss what you would like to change.
 Please make sure to update tests as appropriate.

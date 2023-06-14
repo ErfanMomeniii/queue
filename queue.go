@@ -1,21 +1,21 @@
 package queue
 
-// Queue is an instantiation of the queue
+// Queue is an instantiation of the queue.
 type Queue struct {
-	front *Node
-	back  *Node
+	front *node
+	back  *node
 }
 
-// Node is an instantiation that contains value and pointer to the previous and next node of the queue
-type Node struct {
+// node is an instantiation that contains value of the element and pointer to the previous and next node of the queue.
+type node struct {
 	value    any
-	previous *Node
-	next     *Node
+	previous *node
+	next     *node
 }
 
 // PushFront adds a new element at the beginning of the queue.
 func (q *Queue) PushFront(value any) {
-	n := Node{value: value, next: q.front}
+	n := node{value: value, next: q.front}
 	if q.front != nil {
 		q.front.previous = &n
 		q.front = &n
@@ -27,7 +27,7 @@ func (q *Queue) PushFront(value any) {
 
 // PushBack adds a new element at the end of the queue.
 func (q *Queue) PushBack(value any) {
-	n := Node{value: value, previous: q.back}
+	n := node{value: value, previous: q.back}
 	if q.back != nil {
 		q.back.next = &n
 		q.back = &n
@@ -82,7 +82,7 @@ func (q *Queue) Front() (value any) {
 	return
 }
 
-// Back returns the value of last elements of the queue
+// Back returns the value of last elements of the queue.
 func (q *Queue) Back() (value any) {
 	if q.back != nil {
 		value = q.back.value
