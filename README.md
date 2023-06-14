@@ -115,8 +115,8 @@ Back returns the value of last elements of the queue.
 $ cd benchmarks
 $ go test -bench .
 ```
-<p align="center">
-<img src="./assets/photo/bar-graph.png" width=100%>
+<p align="left">
+<img src="./assets/photo/bar-graph.png" width=50%>
 </p>
 
 ## Contributing
