@@ -116,7 +116,7 @@ $ cd benchmarks
 $ go test -bench .
 ```
 <p align="left">
-<img src="./assets/photo/bar-graph.png" width=50%>
+<img src="./assets/photo/bar-graph.png" width=60%>
 </p>
 
 ## Contributing
