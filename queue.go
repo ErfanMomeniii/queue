@@ -27,7 +27,7 @@ func (q *Queue) PushFront(value any) {
 
 // PushBack adds a new element at the end of the queue.
 func (q *Queue) PushBack(value any) {
-	n := Node{Value: value, previous: q.back}
+	n := Node{value: value, previous: q.back}
 	if q.back != nil {
 		q.back.next = &n
 		q.back = &n
@@ -73,8 +73,8 @@ func (q *Queue) PopBack() (value any) {
 	return
 }
 
-// GetFront returns the value of front elements of the queue.
-func (q *Queue) GetFront() (value any) {
+// Front returns the value of front elements of the queue.
+func (q *Queue) Front() (value any) {
 	if q.front != nil {
 		value = q.front.value
 	}
@@ -82,8 +82,8 @@ func (q *Queue) GetFront() (value any) {
 	return
 }
 
-// GetBack returns the value of last elements of the queue
-func (q *Queue) GetBack() (value any) {
+// Back returns the value of last elements of the queue
+func (q *Queue) Back() (value any) {
 	if q.back != nil {
 		value = q.back.value
 	}
