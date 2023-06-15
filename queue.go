@@ -98,6 +98,7 @@ func (q *Queue) Size() (s int) {
 		s++
 		p = p.next
 	}
+
 	return
 }
 
