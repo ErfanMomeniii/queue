@@ -51,3 +51,15 @@ func TestCombine(t *testing.T) {
 	assert.Equal(t, q.Back(), 3.14)
 	assert.Equal(t, q.Front(), 4)
 }
+
+func TestSize(t *testing.T) {
+	q := New()
+	assert.Equal(t, q.Size(), 0)
+
+	q.PushBack(2)
+	q.PushBack("hi")
+	assert.Equal(t, q.Size(), 2)
+
+	q.PopFront()
+	assert.Equal(t, q.Size(), 1)
+}

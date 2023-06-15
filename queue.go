@@ -91,6 +91,16 @@ func (q *Queue) Back() (value any) {
 	return
 }
 
+// Size returns size of the queue.
+func (q *Queue) Size() (s int) {
+	p := q.front
+	for p != nil {
+		s++
+		p = p.next
+	}
+	return
+}
+
 // New creates a new instance of a queue.
 func New() *Queue {
 	return &Queue{front: nil, back: nil}
