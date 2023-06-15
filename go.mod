@@ -1,4 +1,4 @@
-module guthub.com/erfanmomeniii/queue
+module github.com/erfanmomeniii/queue
 
 go 1.20
 

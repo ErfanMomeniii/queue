@@ -2,7 +2,7 @@ package benchmarks
 
 import (
 	"container/list"
-	"guthub.com/erfanmomeniii/queue"
+	"github.com/erfanmomeniii/queue"
 	"testing"
 )
 
