@@ -11,8 +11,8 @@
 </p>
 
 # queue 
-queue is a lightweight package for having queue and deque in Go.
-it performs better than the built-in [container/list](https://golang.org/pkg/container/list/) package for any operation.
+<b>queue</b> is a lightweight package that provides queue and deque implementation with high performance in Go.</br>
+It also performs better than the built-in [container/list](https://golang.org/pkg/container/list/) package for any operation.
 
 # Documentation
 
@@ -115,8 +115,8 @@ Back returns the value of last elements of the queue.
 $ cd benchmarks
 $ go test -bench .
 ```
-<p align="center">
-<img src="./assets/photo/bar-graph.png" width=100%>
+<p align="left">
+<img src="./assets/photo/bar-graph.png" width=60%>
 </p>
 
 ## Contributing
