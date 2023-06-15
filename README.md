@@ -110,6 +110,12 @@ func (q *Queue) Back() (value any)
 ```
 Back returns the value of last elements of the queue.
 
+#### func Size
+```go
+func (q *Queue) Size() (s int)
+```
+Size returns size of the queue.
+
 ## Benchmarks
 ```
 $ cd benchmarks
