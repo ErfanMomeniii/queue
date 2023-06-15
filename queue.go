@@ -91,13 +91,32 @@ func (q *Queue) Back() (value any) {
 	return
 }
 
-// Size returns size of the queue.
+// Size returns a size of the queue.
 func (q *Queue) Size() (s int) {
 	p := q.front
 	for p != nil {
 		s++
 		p = p.next
 	}
+
+	return
+}
+
+// List returns a list of elements value in the queue.
+func (q *Queue) List() (l []any) {
+	p := q.front
+	for p != nil {
+		l = append(l, p.value)
+		p = p.next
+	}
+
+	return
+}
+
+// Clear removes all elements of the queue.
+func (q *Queue) Clear() {
+	q.front = nil
+	q.back = nil
 
 	return
 }

@@ -63,3 +63,15 @@ func TestSize(t *testing.T) {
 	q.PopFront()
 	assert.Equal(t, q.Size(), 1)
 }
+
+func TestList(t *testing.T) {
+	q := New()
+	assert.Equal(t, q.List(), []any(nil))
+
+	q.PushBack(2)
+	q.PushBack("hi")
+	assert.Equal(t, q.List(), []any{2, "hi"})
+
+	q.PopFront()
+	assert.Equal(t, q.List(), []any{"hi"})
+}
