@@ -116,6 +116,18 @@ func (q *Queue) Size() (s int)
 ```
 Size returns size of the queue.
 
+#### func List
+```go
+func (q *Queue) List() (l []any)
+```
+List returns a list of elements value in the queue.
+
+#### func Clear
+```go
+func (q *Queue) Clear() 
+```
+Clear removes all elements of the queue.
+
 ## Benchmarks
 ```
 $ cd benchmarks
