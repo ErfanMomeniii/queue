@@ -2,12 +2,12 @@
 <img src="./assets/photo/logo.png" width=50% height=50%>
 </p>
 <p align="center">
-<a href="https://pkg.go.dev/github.com/mehditeymorian/koi/v3?tab=doc"target="_blank">
+<a href="https://pkg.go.dev/github.com/erfanmomeniii/queue?tab=doc"target="_blank">
     <img src="https://img.shields.io/badge/Go-1.20+-00ADD8?style=for-the-badge&logo=go" alt="go version" />
 </a>
 
 <img src="https://img.shields.io/badge/license-MIT-magenta?style=for-the-badge&logo=none" alt="license" />
-<img src="https://img.shields.io/badge/Version-1.0.0-red?style=for-the-badge&logo=none" alt="version" />
+<img src="https://img.shields.io/badge/Version-1.0.3-red?style=for-the-badge&logo=none" alt="version" />
 </p>
 
 # queue 
